@@ -10,7 +10,7 @@ spec:
   project: sample-project
   source:
     path: sample-app/
-    repoURL: https://github.com/beninanutshell/argocd.git
+    repoURL: git@github.com:beninanutshell/wam-argo-sample-app.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
