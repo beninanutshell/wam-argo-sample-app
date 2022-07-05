@@ -3,7 +3,7 @@ server:
   config:
     repositories: |
       - type: git
-        url: https://github.com/beninanutshell/argocd.git
+        url: https://github.com/beninanutshell/wam-argo-sample-app
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
@@ -21,7 +21,7 @@ server:
           - values.yaml
           - ../values-override.yaml
         path: argocd-install/argo-cd
-        repoURL: https://github.com/beninanutshell/argocd.git
+        repoURL: https://github.com/beninanutshell/wam-argo-sample-app
         targetRevision: HEAD
       syncPolicy:
         syncOptions:
@@ -34,7 +34,7 @@ server:
       project: argocd
       source:
         path: argocd-apps
-        repoURL: https://github.com/beninanutshell/argocd.git
+        repoURL: https://github.com/beninanutshell/wam-argo-sample-app
         targetRevision: HEAD
         directory:
           recurse: true
@@ -51,7 +51,7 @@ server:
       project: argocd
       source:
         path: argocd-appprojects
-        repoURL: https://github.com/beninanutshell/argocd.git
+        repoURL: https://github.com/beninanutshell/wam-argo-sample-app
         targetRevision: HEAD
         directory:
           recurse: true
